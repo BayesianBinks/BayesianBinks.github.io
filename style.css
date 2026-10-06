@@ -1,90 +1,1726 @@
 @import url('https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:ital,wght@0,500;0,600;1,500&display=swap');
-:root{--ink:#263d36;--muted:#68736b;--paper:#f7f5ef;--white:#fffdf8;--rust:#b85e42;--line:#e4e2d9}*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;background:var(--paper);color:var(--ink);font-family:'DM Sans',Arial,sans-serif;line-height:1.65}a{color:inherit}h1,h2,h3,h4{font-family:'Playfair Display',Georgia,serif;font-weight:500;line-height:1.15}h2{font-size:clamp(2.4rem,5vw,4rem);margin:12px 0}h3{font-size:clamp(1.8rem,3vw,2.6rem);margin:10px 0 25px}p{margin-top:0}.wrap{width:min(1120px,90%);margin:auto}.top{height:74px;background:var(--white);display:flex;align-items:center;justify-content:space-between;padding:0 max(5%,calc((100vw - 1120px)/2));position:sticky;top:0;z-index:20;border-bottom:1px solid var(--line)}.brand{text-decoration:none;font-weight:700;letter-spacing:2px;font-size:18px}.brand span{font-weight:400}.brand small{font-size:11px;color:var(--rust)}nav{display:flex;gap:32px}nav a{text-decoration:none;font-size:13px;font-weight:700}nav a:hover{color:var(--rust)}.menu{display:none;background:none;border:0;font-size:25px}.hero{min-height:620px;background:#e7d4bb;display:grid;grid-template-columns:1fr 1fr;overflow:hidden}.hero-inner{align-self:center;padding:70px 8% 70px max(10%,calc((100vw - 1120px)/2));z-index:1}.eyebrow,.kicker{letter-spacing:2.5px;font-size:11px;font-weight:700;color:var(--rust)}.hero h1{font-size:clamp(3.8rem,7vw,7.3rem);letter-spacing:-3px;margin:20px 0}.hero em,.dest-banner em{color:var(--rust);font-weight:500}.hero p{max-width:430px;color:#536056}.btn{display:inline-block;background:var(--ink);color:white;text-decoration:none;padding:13px 24px;margin-top:20px;font-size:13px;font-weight:700}.hero-art{background:linear-gradient(#d3b69e,#f3d4a8 65%,#bb8065);position:relative;overflow:hidden;min-height:450px}.hero-art>span{position:absolute;top:40px;right:40px;letter-spacing:7px;color:#fff8;z-index:2}.hero-art label{position:absolute;bottom:35px;right:35px;color:#fff;z-index:4;letter-spacing:3px;font-size:11px}.sun{width:220px;height:220px;background:#f8dfb2;border-radius:50%;position:absolute;left:25%;top:20%}.mesa{position:absolute;bottom:-1px;background:#9b5848;clip-path:polygon(0 100%,0 55%,15% 55%,22% 35%,40% 35%,45% 12%,68% 12%,74% 49%,88% 49%,100% 65%,100% 100%);width:110%;height:60%}.mesa1{right:-40%;bottom:16%;background:#ce896c;transform:scale(.85)}.mesa2{left:-34%;bottom:3%;background:#a96653}.mesa3{right:-32%;bottom:-14%;background:#783f38;transform:scale(1.1)}.intro{display:grid;grid-template-columns:1fr 1fr;gap:90px;align-items:center;padding:110px 0}.intro p{color:var(--muted);font-size:17px}.section{padding:85px 0}.sectionhead{display:flex;align-items:end;justify-content:space-between;margin:0 0 34px}.subtle{font-size:12px;color:var(--muted)}.timeline{display:grid;grid-template-columns:repeat(2,1fr);gap:12px}.timeline a{display:flex;align-items:center;gap:20px;background:var(--white);border:1px solid var(--line);padding:18px 20px;text-decoration:none;transition:.2s}.timeline a:hover{transform:translateY(-2px);border-color:var(--rust)}.timeline .d{font-weight:700;font-size:12px;color:var(--rust);min-width:47px}.timeline b{display:block;font-size:14px}.timeline small{color:var(--muted);font-size:12px}.timeline .arrow{margin-left:auto;color:var(--rust)}.dest-banner{height:410px;background:#b26c51;position:relative;overflow:hidden;display:flex;align-items:center}.dest-banner .wrap{position:relative;z-index:2}.dest-banner h2{color:#fff9ec;font-size:clamp(4rem,8vw,7.5rem);margin:10px 0}.dest-banner em{color:#edbd91}.dest-banner p{color:white}.light{color:#f2d1ac}.rock{position:absolute;bottom:-25%;right:0;width:60%;height:100%;background:#97533f;clip-path:polygon(0 100%,8% 55%,30% 55%,37% 15%,55% 15%,62% 50%,84% 50%,100% 75%,100% 100%)}.rock2{right:-23%;bottom:-45%;background:#783c33;transform:scale(1.2)}.facts{display:grid;grid-template-columns:repeat(4,1fr);background:var(--white);border:1px solid var(--line);margin:-35px auto 90px;position:relative;z-index:3;box-shadow:0 12px 30px #352b2010}.facts>div{padding:24px;border-right:1px solid var(--line)}.facts>div:last-child{border:0}.facts span{display:block;font-size:10px;letter-spacing:1.5px;color:var(--muted);margin-bottom:7px}.facts strong{font-size:15px}.split{display:grid;grid-template-columns:1.25fr .75fr;gap:70px;align-items:start;margin-bottom:95px}.prose p{color:#526057}.prose details{border-top:1px solid var(--line);border-bottom:1px solid var(--line);padding:15px 0;margin-top:30px}.prose summary{font-weight:700;cursor:pointer}.prose summary span{float:right}.prose details p{padding-top:20px}.photo{background:#e5d6c4;min-height:400px;padding:35px;display:flex;align-items:center;justify-content:center;flex-direction:column;text-align:center;color:#8c7464;border:1px dashed #b9a08c}.photo-symbol{font-size:60px;font-weight:100}.photo p{max-width:230px;font-size:14px}.photo small{max-width:250px;font-size:11px}.daycards{display:grid;grid-template-columns:1fr 1fr;gap:22px;margin:0 0 95px}.daycard{background:var(--white);padding:34px;border:1px solid var(--line)}.date{font-size:11px;letter-spacing:1.5px;color:var(--rust);font-weight:700}.daycard h4{font-size:29px;margin:13px 0}.summary{color:var(--muted);min-height:60px}.tagrow{display:flex;flex-wrap:wrap;gap:7px;border-bottom:1px solid var(--line);padding-bottom:22px}.tag{font-size:11px;background:#f0ede5;padding:6px 9px;border-radius:3px}.steps{padding:0 0 0 22px}.steps li{padding:10px 0 10px 7px}.steps li::marker{color:var(--rust);font-weight:700}.steps b{font-size:14px}.steps p{font-size:13px;color:var(--muted);margin:5px 0 0}.steps i{font-weight:400;font-size:11px;color:var(--rust)}.stops{border-top:1px solid var(--line);margin-bottom:35px}.stops details{border-bottom:1px solid var(--line)}.stops summary{display:flex;gap:25px;align-items:center;cursor:pointer;padding:23px 5px;list-style:none}.stops summary::-webkit-details-marker{display:none}.stops .num{font-family:Georgia,serif;color:var(--rust);font-size:28px}.stops b{font-size:16px}.stops small{display:block;color:var(--muted);font-size:12px}.plus{margin-left:auto;font-size:23px;color:var(--rust)}.stopbody{padding:0 55px 25px;color:var(--muted);max-width:800px;font-size:14px}.note{background:#e9ebe2;padding:25px 32px;margin:35px 0 100px;border-left:4px solid var(--ink)}.note p{margin:5px 0 0;color:var(--muted)}.practical{display:grid;grid-template-columns:repeat(3,1fr);gap:15px}.practical>div{background:var(--white);border:1px solid var(--line);padding:25px}.practical h3{font-family:'DM Sans',Arial,sans-serif;font-size:17px;margin:0 0 12px}.practical p{font-size:13px;color:var(--muted)}.disclaimer{font-size:11px;color:var(--muted);margin-top:25px}footer{background:var(--ink);color:#fff;display:flex;justify-content:space-between;padding:32px 5%;font-size:11px;letter-spacing:1.5px}@media(max-width:760px){.top{height:65px}.menu{display:block}nav{display:none;position:absolute;top:65px;left:0;right:0;background:var(--white);padding:20px 5%;box-shadow:0 10px 15px #0001}nav.open{display:grid;gap:20px}.hero{grid-template-columns:1fr}.hero-inner{padding:60px 7%}.hero-art{min-height:250px}.intro,.split,.daycards{grid-template-columns:1fr;gap:25px}.intro{padding:70px 0}.section{padding:60px 0}.timeline{grid-template-columns:1fr}.facts{grid-template-columns:1fr 1fr;margin-bottom:60px}.facts>div:nth-child(2){border-right:0}.facts>div:nth-child(-n+2){border-bottom:1px solid var(--line)}.dest-banner{height:320px}.photo{min-height:260px}.summary{min-height:0}.practical{grid-template-columns:1fr}.sectionhead{display:block}.subtle{display:none}footer{gap:20px;flex-wrap:wrap}}
+
+:root {
+    --ink: #263d36;
+    --muted: #68736b;
+    --paper: #f7f5ef;
+    --white: #fffdf8;
+    --rust: #b85e42;
+    --line: #e4e2d9
+}
+
+* {
+    box-sizing: border-box
+}
+
+html {
+    scroll-behavior: smooth
+}
+
+body {
+    margin: 0;
+    background: var(--paper);
+    color: var(--ink);
+    font-family: 'DM Sans', Arial, sans-serif;
+    line-height: 1.65
+}
+
+a {
+    color: inherit
+}
+
+h1,
+h2,
+h3,
+h4 {
+    font-family: 'Playfair Display', Georgia, serif;
+    font-weight: 500;
+    line-height: 1.15
+}
+
+h2 {
+    font-size: clamp(2.4rem, 5vw, 4rem);
+    margin: 12px 0
+}
+
+h3 {
+    font-size: clamp(1.8rem, 3vw, 2.6rem);
+    margin: 10px 0 25px
+}
+
+p {
+    margin-top: 0
+}
+
+.wrap {
+    width: min(1120px, 90%);
+    margin: auto
+}
+
+.top {
+    height: 74px;
+    background: var(--white);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 max(5%, calc((100vw - 1120px)/2));
+    position: sticky;
+    top: 0;
+    z-index: 20;
+    border-bottom: 1px solid var(--line)
+}
+
+.brand {
+    text-decoration: none;
+    font-weight: 700;
+    letter-spacing: 2px;
+    font-size: 18px
+}
+
+.brand span {
+    font-weight: 400
+}
+
+.brand small {
+    font-size: 11px;
+    color: var(--rust)
+}
+
+nav {
+    display: flex;
+    gap: 32px
+}
+
+nav a {
+    text-decoration: none;
+    font-size: 13px;
+    font-weight: 700
+}
+
+nav a:hover {
+    color: var(--rust)
+}
+
+.menu {
+    display: none;
+    background: none;
+    border: 0;
+    font-size: 25px
+}
+
+.hero {
+    min-height: 620px;
+    background: #e7d4bb;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    overflow: hidden
+}
+
+.hero-inner {
+    align-self: center;
+    padding: 70px 8% 70px max(10%, calc((100vw - 1120px)/2));
+    z-index: 1
+}
+
+.eyebrow,
+.kicker {
+    letter-spacing: 2.5px;
+    font-size: 11px;
+    font-weight: 700;
+    color: var(--rust)
+}
+
+.hero h1 {
+    font-size: clamp(3.8rem, 7vw, 7.3rem);
+    letter-spacing: -3px;
+    margin: 20px 0
+}
+
+.hero em,
+.dest-banner em {
+    color: var(--rust);
+    font-weight: 500
+}
+
+.hero p {
+    max-width: 430px;
+    color: #536056
+}
+
+.btn {
+    display: inline-block;
+    background: var(--ink);
+    color: white;
+    text-decoration: none;
+    padding: 13px 24px;
+    margin-top: 20px;
+    font-size: 13px;
+    font-weight: 700
+}
+
+.hero-art {
+    background: linear-gradient(#d3b69e, #f3d4a8 65%, #bb8065);
+    position: relative;
+    overflow: hidden;
+    min-height: 450px
+}
+
+.hero-art>span {
+    position: absolute;
+    top: 40px;
+    right: 40px;
+    letter-spacing: 7px;
+    color: #fff8;
+    z-index: 2
+}
+
+.hero-art label {
+    position: absolute;
+    bottom: 35px;
+    right: 35px;
+    color: #fff;
+    z-index: 4;
+    letter-spacing: 3px;
+    font-size: 11px
+}
+
+.sun {
+    width: 220px;
+    height: 220px;
+    background: #f8dfb2;
+    border-radius: 50%;
+    position: absolute;
+    left: 25%;
+    top: 20%
+}
+
+.mesa {
+    position: absolute;
+    bottom: -1px;
+    background: #9b5848;
+    clip-path: polygon(0 100%, 0 55%, 15% 55%, 22% 35%, 40% 35%, 45% 12%, 68% 12%, 74% 49%, 88% 49%, 100% 65%, 100% 100%);
+    width: 110%;
+    height: 60%
+}
+
+.mesa1 {
+    right: -40%;
+    bottom: 16%;
+    background: #ce896c;
+    transform: scale(.85)
+}
+
+.mesa2 {
+    left: -34%;
+    bottom: 3%;
+    background: #a96653
+}
+
+.mesa3 {
+    right: -32%;
+    bottom: -14%;
+    background: #783f38;
+    transform: scale(1.1)
+}
+
+.intro {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 90px;
+    align-items: center;
+    padding: 110px 0
+}
+
+.intro p {
+    color: var(--muted);
+    font-size: 17px
+}
+
+.section {
+    padding: 85px 0
+}
+
+.sectionhead {
+    display: flex;
+    align-items: end;
+    justify-content: space-between;
+    margin: 0 0 34px
+}
+
+.subtle {
+    font-size: 12px;
+    color: var(--muted)
+}
+
+.timeline {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 12px
+}
+
+.timeline a {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    background: var(--white);
+    border: 1px solid var(--line);
+    padding: 18px 20px;
+    text-decoration: none;
+    transition: .2s
+}
+
+.timeline a:hover {
+    transform: translateY(-2px);
+    border-color: var(--rust)
+}
+
+.timeline .d {
+    font-weight: 700;
+    font-size: 12px;
+    color: var(--rust);
+    min-width: 47px
+}
+
+.timeline b {
+    display: block;
+    font-size: 14px
+}
+
+.timeline small {
+    color: var(--muted);
+    font-size: 12px
+}
+
+.timeline .arrow {
+    margin-left: auto;
+    color: var(--rust)
+}
+
+.dest-banner {
+    height: 410px;
+    background: #b26c51;
+    position: relative;
+    overflow: hidden;
+    display: flex;
+    align-items: center
+}
+
+.dest-banner .wrap {
+    position: relative;
+    z-index: 2
+}
+
+.dest-banner h2 {
+    color: #fff9ec;
+    font-size: clamp(4rem, 8vw, 7.5rem);
+    margin: 10px 0
+}
+
+.dest-banner em {
+    color: #edbd91
+}
+
+.dest-banner p {
+    color: white
+}
+
+.light {
+    color: #f2d1ac
+}
+
+.rock {
+    position: absolute;
+    bottom: -25%;
+    right: 0;
+    width: 60%;
+    height: 100%;
+    background: #97533f;
+    clip-path: polygon(0 100%, 8% 55%, 30% 55%, 37% 15%, 55% 15%, 62% 50%, 84% 50%, 100% 75%, 100% 100%)
+}
+
+.rock2 {
+    right: -23%;
+    bottom: -45%;
+    background: #783c33;
+    transform: scale(1.2)
+}
+
+.facts {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    background: var(--white);
+    border: 1px solid var(--line);
+    margin: -35px auto 90px;
+    position: relative;
+    z-index: 3;
+    box-shadow: 0 12px 30px #352b2010
+}
+
+.facts>div {
+    padding: 24px;
+    border-right: 1px solid var(--line)
+}
+
+.facts>div:last-child {
+    border: 0
+}
+
+.facts span {
+    display: block;
+    font-size: 10px;
+    letter-spacing: 1.5px;
+    color: var(--muted);
+    margin-bottom: 7px
+}
+
+.facts strong {
+    font-size: 15px
+}
+
+.split {
+    display: grid;
+    grid-template-columns: 1.25fr .75fr;
+    gap: 70px;
+    align-items: start;
+    margin-bottom: 95px
+}
+
+.prose p {
+    color: #526057
+}
+
+.prose details {
+    border-top: 1px solid var(--line);
+    border-bottom: 1px solid var(--line);
+    padding: 15px 0;
+    margin-top: 30px
+}
+
+.prose summary {
+    font-weight: 700;
+    cursor: pointer
+}
+
+.prose summary span {
+    float: right
+}
+
+.prose details p {
+    padding-top: 20px
+}
+
+.photo {
+    background: #e5d6c4;
+    min-height: 400px;
+    padding: 35px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+    color: #8c7464;
+    border: 1px dashed #b9a08c
+}
+
+.photo-symbol {
+    font-size: 60px;
+    font-weight: 100
+}
+
+.photo p {
+    max-width: 230px;
+    font-size: 14px
+}
+
+.photo small {
+    max-width: 250px;
+    font-size: 11px
+}
+
+.daycards {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 22px;
+    margin: 0 0 95px
+}
+
+.daycard {
+    background: var(--white);
+    padding: 34px;
+    border: 1px solid var(--line)
+}
+
+.date {
+    font-size: 11px;
+    letter-spacing: 1.5px;
+    color: var(--rust);
+    font-weight: 700
+}
+
+.daycard h4 {
+    font-size: 29px;
+    margin: 13px 0
+}
+
+.summary {
+    color: var(--muted);
+    min-height: 60px
+}
+
+.tagrow {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 7px;
+    border-bottom: 1px solid var(--line);
+    padding-bottom: 22px
+}
+
+.tag {
+    font-size: 11px;
+    background: #f0ede5;
+    padding: 6px 9px;
+    border-radius: 3px
+}
+
+.steps {
+    padding: 0 0 0 22px
+}
+
+.steps li {
+    padding: 10px 0 10px 7px
+}
+
+.steps li::marker {
+    color: var(--rust);
+    font-weight: 700
+}
+
+.steps b {
+    font-size: 14px
+}
+
+.steps p {
+    font-size: 13px;
+    color: var(--muted);
+    margin: 5px 0 0
+}
+
+.steps i {
+    font-weight: 400;
+    font-size: 11px;
+    color: var(--rust)
+}
+
+.stops {
+    border-top: 1px solid var(--line);
+    margin-bottom: 35px
+}
+
+.stops details {
+    border-bottom: 1px solid var(--line)
+}
+
+.stops summary {
+    display: flex;
+    gap: 25px;
+    align-items: center;
+    cursor: pointer;
+    padding: 23px 5px;
+    list-style: none
+}
+
+.stops summary::-webkit-details-marker {
+    display: none
+}
+
+.stops .num {
+    font-family: Georgia, serif;
+    color: var(--rust);
+    font-size: 28px
+}
+
+.stops b {
+    font-size: 16px
+}
+
+.stops small {
+    display: block;
+    color: var(--muted);
+    font-size: 12px
+}
+
+.plus {
+    margin-left: auto;
+    font-size: 23px;
+    color: var(--rust)
+}
+
+.stopbody {
+    padding: 0 55px 25px;
+    color: var(--muted);
+    max-width: 800px;
+    font-size: 14px
+}
+
+.note {
+    background: #e9ebe2;
+    padding: 25px 32px;
+    margin: 35px 0 100px;
+    border-left: 4px solid var(--ink)
+}
+
+.note p {
+    margin: 5px 0 0;
+    color: var(--muted)
+}
+
+.practical {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 15px
+}
+
+.practical>div {
+    background: var(--white);
+    border: 1px solid var(--line);
+    padding: 25px
+}
+
+.practical h3 {
+    font-family: 'DM Sans', Arial, sans-serif;
+    font-size: 17px;
+    margin: 0 0 12px
+}
+
+.practical p {
+    font-size: 13px;
+    color: var(--muted)
+}
+
+.disclaimer {
+    font-size: 11px;
+    color: var(--muted);
+    margin-top: 25px
+}
+
+footer {
+    background: var(--ink);
+    color: #fff;
+    display: flex;
+    justify-content: space-between;
+    padding: 32px 5%;
+    font-size: 11px;
+    letter-spacing: 1.5px
+}
+
+@media(max-width:760px) {
+    .top {
+        height: 65px
+    }
+
+    .menu {
+        display: block
+    }
+
+    nav {
+        display: none;
+        position: absolute;
+        top: 65px;
+        left: 0;
+        right: 0;
+        background: var(--white);
+        padding: 20px 5%;
+        box-shadow: 0 10px 15px #0001
+    }
+
+    nav.open {
+        display: grid;
+        gap: 20px
+    }
+
+    .hero {
+        grid-template-columns: 1fr
+    }
+
+    .hero-inner {
+        padding: 60px 7%
+    }
+
+    .hero-art {
+        min-height: 250px
+    }
+
+    .intro,
+    .split,
+    .daycards {
+        grid-template-columns: 1fr;
+        gap: 25px
+    }
+
+    .intro {
+        padding: 70px 0
+    }
+
+    .section {
+        padding: 60px 0
+    }
+
+    .timeline {
+        grid-template-columns: 1fr
+    }
+
+    .facts {
+        grid-template-columns: 1fr 1fr;
+        margin-bottom: 60px
+    }
+
+    .facts>div:nth-child(2) {
+        border-right: 0
+    }
+
+    .facts>div:nth-child(-n+2) {
+        border-bottom: 1px solid var(--line)
+    }
+
+    .dest-banner {
+        height: 320px
+    }
+
+    .photo {
+        min-height: 260px
+    }
+
+    .summary {
+        min-height: 0
+    }
+
+    .practical {
+        grid-template-columns: 1fr
+    }
+
+    .sectionhead {
+        display: block
+    }
+
+    .subtle {
+        display: none
+    }
+
+    footer {
+        gap: 20px;
+        flex-wrap: wrap
+    }
+}
 
 /* Reisgids v2 */
-.guide-index{padding-top:90px}.guide-index>p{max-width:680px;color:var(--muted)}.guide-links{display:grid;grid-template-columns:repeat(2,1fr);gap:12px;margin-top:35px}.guide-links a{background:var(--white);padding:20px 24px;border:1px solid var(--line);text-decoration:none;font-weight:700;display:flex;justify-content:space-between}.guide-links span{color:var(--rust)}.new-guide{scroll-margin-top:74px}.guide-banner{background:linear-gradient(125deg,#865044,#c48767 60%,#d9b38a);padding:90px 0;color:#fff8ec}.new-guide:nth-of-type(even) .guide-banner{background:linear-gradient(125deg,#384d44,#8c8068 65%,#c0a284)}.guide-banner h2{max-width:820px;font-size:clamp(3.3rem,7vw,6rem);margin:15px 0}.guide-banner p{max-width:670px}.guide-content{padding:65px 0 35px}.guide-lead{display:grid;grid-template-columns:1.4fr .6fr;gap:55px;margin-bottom:60px;align-items:center}.guide-lead p{font-size:18px;line-height:1.9;margin-top:20px}.guide-photo{min-height:220px;background:#e8d9c9;border:1px dashed #ba9f86;display:flex;flex-direction:column;align-items:center;justify-content:center;letter-spacing:2px;color:#947c6a;font-size:12px}.guide-photo small{letter-spacing:0;margin-top:8px}.guide-days{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:24px;margin:24px 0}.guide-day{background:var(--white);border:1px solid var(--line);padding:30px;scroll-margin-top:85px}.guide-day h3{font-size:29px;margin:8px 0 14px}.guide-day>p{font-size:14px;color:var(--muted);min-height:65px}.guide-day .stops{margin-bottom:0}.guide-day .stops summary{gap:12px;padding:18px 2px}.guide-day .stops .num{font-size:21px}.guide-day .stopbody{padding:0 12px 20px 37px}.guide-content .note{margin:30px 0 55px}.guide-index,.new-guide{scroll-margin-top:74px}@media(max-width:760px){.guide-links,.guide-days,.guide-lead{grid-template-columns:1fr}.guide-banner{padding:65px 0}.guide-content{padding-top:40px}.guide-day{padding:20px}.guide-day>p{min-height:0}}
+.guide-index {
+    padding-top: 90px
+}
+
+.guide-index>p {
+    max-width: 680px;
+    color: var(--muted)
+}
+
+.guide-links {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 12px;
+    margin-top: 35px
+}
+
+.guide-links a {
+    background: var(--white);
+    padding: 20px 24px;
+    border: 1px solid var(--line);
+    text-decoration: none;
+    font-weight: 700;
+    display: flex;
+    justify-content: space-between
+}
+
+.guide-links span {
+    color: var(--rust)
+}
+
+.new-guide {
+    scroll-margin-top: 74px
+}
+
+.guide-banner {
+    background: linear-gradient(125deg, #865044, #c48767 60%, #d9b38a);
+    padding: 90px 0;
+    color: #fff8ec
+}
+
+.new-guide:nth-of-type(even) .guide-banner {
+    background: linear-gradient(125deg, #384d44, #8c8068 65%, #c0a284)
+}
+
+.guide-banner h2 {
+    max-width: 820px;
+    font-size: clamp(3.3rem, 7vw, 6rem);
+    margin: 15px 0
+}
+
+.guide-banner p {
+    max-width: 670px
+}
+
+.guide-content {
+    padding: 65px 0 35px
+}
+
+.guide-lead {
+    display: grid;
+    grid-template-columns: 1.4fr .6fr;
+    gap: 55px;
+    margin-bottom: 60px;
+    align-items: center
+}
+
+.guide-lead p {
+    font-size: 18px;
+    line-height: 1.9;
+    margin-top: 20px
+}
+
+.guide-photo {
+    min-height: 220px;
+    background: #e8d9c9;
+    border: 1px dashed #ba9f86;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    letter-spacing: 2px;
+    color: #947c6a;
+    font-size: 12px
+}
+
+.guide-photo small {
+    letter-spacing: 0;
+    margin-top: 8px
+}
+
+.guide-days {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 24px;
+    margin: 24px 0
+}
+
+.guide-day {
+    background: var(--white);
+    border: 1px solid var(--line);
+    padding: 30px;
+    scroll-margin-top: 85px
+}
+
+.guide-day h3 {
+    font-size: 29px;
+    margin: 8px 0 14px
+}
+
+.guide-day>p {
+    font-size: 14px;
+    color: var(--muted);
+    min-height: 65px
+}
+
+.guide-day .stops {
+    margin-bottom: 0
+}
+
+.guide-day .stops summary {
+    gap: 12px;
+    padding: 18px 2px
+}
+
+.guide-day .stops .num {
+    font-size: 21px
+}
+
+.guide-day .stopbody {
+    padding: 0 12px 20px 37px
+}
+
+.guide-content .note {
+    margin: 30px 0 55px
+}
+
+.guide-index,
+.new-guide {
+    scroll-margin-top: 74px
+}
+
+@media(max-width:760px) {
+
+    .guide-links,
+    .guide-days,
+    .guide-lead {
+        grid-template-columns: 1fr
+    }
+
+    .guide-banner {
+        padding: 65px 0
+    }
+
+    .guide-content {
+        padding-top: 40px
+    }
+
+    .guide-day {
+        padding: 20px
+    }
+
+    .guide-day>p {
+        min-height: 0
+    }
+}
 
 /* v3: praktische kaarten per bestemming en herkenbare activiteiteniconen */
-.destination-practical{margin:64px 0 85px;scroll-margin-top:95px}.destination-practical h3{margin:10px 0 24px}.destination-practical .practical h4{font-family:'DM Sans',Arial,sans-serif;font-size:16px;margin:0 0 12px;font-weight:700}.destination-practical .practical p{margin:0}.stop-icon{font-size:17px;flex:0 0 24px;line-height:1.2}.stops summary{gap:15px}.icon-legend{white-space:pre-wrap;font-size:12px;color:var(--muted);margin:-10px 0 25px;line-height:2}.destination-practical .practical>div{min-height:160px}@media(max-width:760px){.destination-practical{margin:45px 0 60px}.destination-practical .practical>div{min-height:0}}
+.destination-practical {
+    margin: 64px 0 85px;
+    scroll-margin-top: 95px
+}
+
+.destination-practical h3 {
+    margin: 10px 0 24px
+}
+
+.destination-practical .practical h4 {
+    font-family: 'DM Sans', Arial, sans-serif;
+    font-size: 16px;
+    margin: 0 0 12px;
+    font-weight: 700
+}
+
+.destination-practical .practical p {
+    margin: 0
+}
+
+.stop-icon {
+    font-size: 17px;
+    flex: 0 0 24px;
+    line-height: 1.2
+}
+
+.stops summary {
+    gap: 15px
+}
+
+.icon-legend {
+    white-space: pre-wrap;
+    font-size: 12px;
+    color: var(--muted);
+    margin: -10px 0 25px;
+    line-height: 2
+}
+
+.destination-practical .practical>div {
+    min-height: 160px
+}
+
+@media(max-width:760px) {
+    .destination-practical {
+        margin: 45px 0 60px
+    }
+
+    .destination-practical .practical>div {
+        min-height: 0
+    }
+}
 
 /* v7: rustige achtergrondkaders en kaartlinks */
-.deep-dive{margin:2.8rem 0 1.6rem;padding:1.7rem 2rem;border-radius:16px;background:#f5f0e7;border-left:4px solid #bd784f;max-width:980px;}
-.deep-dive h3{margin:.35rem 0 1rem;font-size:clamp(1.45rem,2.5vw,2rem);color:#294137;}
-.deep-dive p{max-width:75ch;line-height:1.8;margin:.75rem 0;color:#34443d;}
-.place-map{display:inline-block;margin-top:.85rem;color:#fff;border:1px solid #ffffff9c;border-radius:40px;padding:.48rem .9rem;text-decoration:none;font-size:.85rem;}
-.place-map:hover{background:#ffffff25;}
-.map-link{display:inline-block;margin-top:1rem;color:#315447;font-weight:700;text-decoration:underline;text-underline-offset:4px;}
-@media(max-width:650px){.deep-dive{padding:1.3rem 1.2rem;margin:2rem 0}.deep-dive p{line-height:1.7}}
+.deep-dive {
+    margin: 2.8rem 0 1.6rem;
+    padding: 1.7rem 2rem;
+    border-radius: 16px;
+    background: #f5f0e7;
+    border-left: 4px solid #bd784f;
+    max-width: 980px;
+}
+
+.deep-dive h3 {
+    margin: .35rem 0 1rem;
+    font-size: clamp(1.45rem, 2.5vw, 2rem);
+    color: #294137;
+}
+
+.deep-dive p {
+    max-width: 75ch;
+    line-height: 1.8;
+    margin: .75rem 0;
+    color: #34443d;
+}
+
+.place-map {
+    display: inline-block;
+    margin-top: .85rem;
+    color: #fff;
+    border: 1px solid #ffffff9c;
+    border-radius: 40px;
+    padding: .48rem .9rem;
+    text-decoration: none;
+    font-size: .85rem;
+}
+
+.place-map:hover {
+    background: #ffffff25;
+}
+
+.map-link {
+    display: inline-block;
+    margin-top: 1rem;
+    color: #315447;
+    font-weight: 700;
+    text-decoration: underline;
+    text-underline-offset: 4px;
+}
+
+@media(max-width:650px) {
+    .deep-dive {
+        padding: 1.3rem 1.2rem;
+        margin: 2rem 0
+    }
+
+    .deep-dive p {
+        line-height: 1.7
+    }
+}
 
 /* v8: één standaard ingeklapt verdiepingspaneel per bestemming */
-.deep-dive-panel{max-width:980px;margin:2.8rem 0 1.6rem;border:1px solid #dfd2c0;border-left:4px solid #bd784f;border-radius:14px;background:#f5f0e7;overflow:hidden}
-.deep-dive-panel>summary{display:flex;align-items:center;gap:14px;padding:20px 25px;cursor:pointer;list-style:none;color:#294137;font-weight:700}
-.deep-dive-panel>summary::-webkit-details-marker{display:none}
-.deep-dive-panel>summary:hover{background:#eee5d8}
-.dive-symbol{font-size:21px}.dive-label{font-family:'Playfair Display',Georgia,serif;font-size:23px}.dive-hint{font-size:12px;font-weight:400;color:#68736b}.dive-caret{margin-left:auto;font-size:26px;color:#b85e42;transition:transform .2s}
-.deep-dive-panel[open] .dive-caret{transform:rotate(180deg)}
-.deep-dive-panel .deep-dive{margin:0;padding:6px 28px 30px;border:0;border-radius:0;background:transparent;max-width:none}
-.original-notes{border-top:1px solid #d9cbb8;margin-top:28px;padding-top:25px}
-.original-notes h4,.valley-geology h4{font-size:21px;margin:0 0 12px}
-.source-note{font-size:13px;color:#69746a!important;font-style:italic}
-.original-content{font-size:14px;line-height:1.75;overflow-wrap:anywhere}
-.original-content p,.original-content li{color:#34443d;margin-bottom:10px}
-.original-content ul{padding-left:23px}.original-content a{color:#a54c31;text-decoration:underline}
-.original-content h2,.original-content h3{font-size:19px;margin:20px 0 10px}
-.valley-geology{padding:12px 0 20px}
-@media(max-width:650px){.deep-dive-panel>summary{padding:17px 15px;gap:9px;flex-wrap:wrap}.dive-hint{flex-basis:75%;order:3;margin-left:34px}.dive-caret{order:2}.deep-dive-panel .deep-dive{padding:4px 16px 24px}}
+.deep-dive-panel {
+    max-width: 980px;
+    margin: 2.8rem 0 1.6rem;
+    border: 1px solid #dfd2c0;
+    border-left: 4px solid #bd784f;
+    border-radius: 14px;
+    background: #f5f0e7;
+    overflow: hidden
+}
+
+.deep-dive-panel>summary {
+    display: flex;
+    align-items: center;
+    gap: 14px;
+    padding: 20px 25px;
+    cursor: pointer;
+    list-style: none;
+    color: #294137;
+    font-weight: 700
+}
+
+.deep-dive-panel>summary::-webkit-details-marker {
+    display: none
+}
+
+.deep-dive-panel>summary:hover {
+    background: #eee5d8
+}
+
+.dive-symbol {
+    font-size: 21px
+}
+
+.dive-label {
+    font-family: 'Playfair Display', Georgia, serif;
+    font-size: 23px
+}
+
+.dive-hint {
+    font-size: 12px;
+    font-weight: 400;
+    color: #68736b
+}
+
+.dive-caret {
+    margin-left: auto;
+    font-size: 26px;
+    color: #b85e42;
+    transition: transform .2s
+}
+
+.deep-dive-panel[open] .dive-caret {
+    transform: rotate(180deg)
+}
+
+.deep-dive-panel .deep-dive {
+    margin: 0;
+    padding: 6px 28px 30px;
+    border: 0;
+    border-radius: 0;
+    background: transparent;
+    max-width: none
+}
+
+.original-notes {
+    border-top: 1px solid #d9cbb8;
+    margin-top: 28px;
+    padding-top: 25px
+}
+
+.original-notes h4,
+.valley-geology h4 {
+    font-size: 21px;
+    margin: 0 0 12px
+}
+
+.source-note {
+    font-size: 13px;
+    color: #69746a !important;
+    font-style: italic
+}
+
+.original-content {
+    font-size: 14px;
+    line-height: 1.75;
+    overflow-wrap: anywhere
+}
+
+.original-content p,
+.original-content li {
+    color: #34443d;
+    margin-bottom: 10px
+}
+
+.original-content ul {
+    padding-left: 23px
+}
+
+.original-content a {
+    color: #a54c31;
+    text-decoration: underline
+}
+
+.original-content h2,
+.original-content h3 {
+    font-size: 19px;
+    margin: 20px 0 10px
+}
+
+.valley-geology {
+    padding: 12px 0 20px
+}
+
+@media(max-width:650px) {
+    .deep-dive-panel>summary {
+        padding: 17px 15px;
+        gap: 9px;
+        flex-wrap: wrap
+    }
+
+    .dive-hint {
+        flex-basis: 75%;
+        order: 3;
+        margin-left: 34px
+    }
+
+    .dive-caret {
+        order: 2
+    }
+
+    .deep-dive-panel .deep-dive {
+        padding: 4px 16px 24px
+    }
+}
+
 /* v11 · photographic prototype for Valley of Fire */
-#valley .guide-banner{position:relative;min-height:420px;display:flex;align-items:flex-end;background:linear-gradient(90deg,rgba(25,28,24,.82),rgba(25,28,24,.22)),url('images/valley-of-fire/road_between_rocks.webp') center 48%/cover no-repeat;overflow:hidden}
-#valley .guide-banner:after{content:"";position:absolute;inset:auto 0 0;height:42%;background:linear-gradient(transparent,rgba(0,0,0,.35));pointer-events:none}
-#valley .guide-banner .wrap{position:relative;z-index:1;padding-top:7rem;padding-bottom:3.5rem}
-#valley .guide-banner h2{font-size:clamp(3.4rem,8vw,7rem);text-shadow:0 2px 18px rgba(0,0,0,.25)}
-#valley .guide-banner p{font-size:1.05rem;max-width:38rem}
-#valley .guide-lead{align-items:stretch}
-#valley .guide-photo{padding:0;min-height:330px;background:none;overflow:hidden;border-radius:22px;position:relative}
-#valley .guide-photo img{width:100%;height:100%;min-height:330px;object-fit:cover;display:block}
-.photo-caption{position:absolute;left:14px;right:14px;bottom:14px;background:rgba(28,31,27,.78);backdrop-filter:blur(8px);color:#fff;padding:10px 13px;border-radius:12px;font-size:.82rem;line-height:1.35}
-.vf-photo-row{display:grid;grid-template-columns:1.25fr .75fr;gap:18px;margin:30px 0 42px}
-.vf-photo{margin:0;position:relative;overflow:hidden;border-radius:22px;min-height:310px;background:#ddd}
-.vf-photo img{width:100%;height:100%;min-height:310px;object-fit:cover;display:block;transition:transform .4s ease}
-.vf-photo:hover img{transform:scale(1.015)}
-.vf-photo figcaption{position:absolute;left:14px;right:14px;bottom:14px;background:rgba(28,31,27,.78);backdrop-filter:blur(8px);color:#fff;padding:10px 13px;border-radius:12px;font-size:.82rem;line-height:1.35}
-.vf-photo-row .vf-photo:nth-child(2) img{object-position:center}
-@media(max-width:760px){#valley .guide-banner{min-height:350px;background-position:58% center}#valley .guide-banner .wrap{padding-top:6rem;padding-bottom:2.5rem}.vf-photo-row{grid-template-columns:1fr}.vf-photo,.vf-photo img{min-height:260px}#valley .guide-photo,#valley .guide-photo img{min-height:260px}}
+#valley .guide-banner {
+    position: relative;
+    min-height: 420px;
+    display: flex;
+    align-items: flex-end;
+    background: linear-gradient(90deg, rgba(25, 28, 24, .82), rgba(25, 28, 24, .22)), url('images/valley-of-fire/road_between_rocks.webp') center 48%/cover no-repeat;
+    overflow: hidden
+}
+
+#valley .guide-banner:after {
+    content: "";
+    position: absolute;
+    inset: auto 0 0;
+    height: 42%;
+    background: linear-gradient(transparent, rgba(0, 0, 0, .35));
+    pointer-events: none
+}
+
+#valley .guide-banner .wrap {
+    position: relative;
+    z-index: 1;
+    padding-top: 7rem;
+    padding-bottom: 3.5rem
+}
+
+#valley .guide-banner h2 {
+    font-size: clamp(3.4rem, 8vw, 7rem);
+    text-shadow: 0 2px 18px rgba(0, 0, 0, .25)
+}
+
+#valley .guide-banner p {
+    font-size: 1.05rem;
+    max-width: 38rem
+}
+
+#valley .guide-lead {
+    align-items: stretch
+}
+
+#valley .guide-photo {
+    padding: 0;
+    min-height: 330px;
+    background: none;
+    overflow: hidden;
+    border-radius: 22px;
+    position: relative
+}
+
+#valley .guide-photo img {
+    width: 100%;
+    height: 100%;
+    min-height: 330px;
+    object-fit: cover;
+    display: block
+}
+
+.photo-caption {
+    position: absolute;
+    left: 14px;
+    right: 14px;
+    bottom: 14px;
+    background: rgba(28, 31, 27, .78);
+    backdrop-filter: blur(8px);
+    color: #fff;
+    padding: 10px 13px;
+    border-radius: 12px;
+    font-size: .82rem;
+    line-height: 1.35
+}
+
+.vf-photo-row {
+    display: grid;
+    grid-template-columns: 1.25fr .75fr;
+    gap: 18px;
+    margin: 30px 0 42px
+}
+
+.vf-photo {
+    margin: 0;
+    position: relative;
+    overflow: hidden;
+    border-radius: 22px;
+    min-height: 310px;
+    background: #ddd
+}
+
+.vf-photo img {
+    width: 100%;
+    height: 100%;
+    min-height: 310px;
+    object-fit: cover;
+    display: block;
+    transition: transform .4s ease
+}
+
+.vf-photo:hover img {
+    transform: scale(1.015)
+}
+
+.vf-photo figcaption {
+    position: absolute;
+    left: 14px;
+    right: 14px;
+    bottom: 14px;
+    background: rgba(28, 31, 27, .78);
+    backdrop-filter: blur(8px);
+    color: #fff;
+    padding: 10px 13px;
+    border-radius: 12px;
+    font-size: .82rem;
+    line-height: 1.35
+}
+
+.vf-photo-row .vf-photo:nth-child(2) img {
+    object-position: center
+}
+
+@media(max-width:760px) {
+    #valley .guide-banner {
+        min-height: 350px;
+        background-position: 58% center
+    }
+
+    #valley .guide-banner .wrap {
+        padding-top: 6rem;
+        padding-bottom: 2.5rem
+    }
+
+    .vf-photo-row {
+        grid-template-columns: 1fr
+    }
+
+    .vf-photo,
+    .vf-photo img {
+        min-height: 260px
+    }
+
+    #valley .guide-photo,
+    #valley .guide-photo img {
+        min-height: 260px
+    }
+}
 
 /* Valley of Fire photo carousel · v12 */
-.vf-intro{display:block;max-width:820px;margin-bottom:28px}.vf-carousel{position:relative;margin:8px 0 54px}.vf-carousel-track{display:flex;gap:16px;overflow-x:auto;scroll-snap-type:x mandatory;scroll-behavior:smooth;scrollbar-width:none;padding:2px 2px 12px}.vf-carousel-track::-webkit-scrollbar{display:none}.vf-slide{flex:0 0 min(72vw,620px);height:390px;margin:0;position:relative;overflow:hidden;border-radius:22px;scroll-snap-align:center;background:#ddd;cursor:zoom-in}.vf-slide img{width:100%;height:100%;object-fit:cover;display:block;transition:transform .35s ease}.vf-slide:hover img{transform:scale(1.015)}.vf-slide figcaption{position:absolute;left:16px;bottom:16px;background:rgba(28,31,27,.78);backdrop-filter:blur(8px);color:#fff;padding:9px 13px;border-radius:999px;font-size:.8rem}.vf-carousel-btn{position:absolute;z-index:3;top:calc(50% - 30px);width:48px;height:48px;border:0;border-radius:50%;background:rgba(255,255,255,.92);box-shadow:0 5px 20px rgba(0,0,0,.16);font-size:2rem;line-height:1;cursor:pointer}.vf-carousel-btn.prev{left:-20px}.vf-carousel-btn.next{right:-20px}.vf-carousel-dots{display:flex;justify-content:center;gap:7px;margin-top:4px}.vf-carousel-dots i{width:7px;height:7px;border-radius:50%;background:#c8b8a7;display:block}.vf-carousel-dots i.active{background:#7e4d3e}.vf-lightbox{position:fixed;inset:0;z-index:999;background:rgba(15,15,14,.94);display:none;align-items:center;justify-content:center;padding:5vw}.vf-lightbox.open{display:flex}.vf-lightbox img{max-width:94vw;max-height:88vh;object-fit:contain}.vf-lightbox button{position:absolute;right:24px;top:18px;background:none;border:0;color:white;font-size:2.5rem;cursor:pointer}@media(max-width:760px){.vf-slide{flex-basis:88vw;height:300px}.vf-carousel-btn{display:none}.vf-carousel{margin-bottom:42px}}
+.vf-intro {
+    display: block;
+    max-width: 820px;
+    margin-bottom: 28px
+}
 
-#arrival .guide-banner{position:relative;min-height:420px;display:flex;align-items:flex-end;background:linear-gradient(90deg,rgba(25,28,24,.78),rgba(25,28,24,.20)),url("images/las-vegas/strip.jpg") center/cover no-repeat;overflow:hidden}
-#arrival .guide-banner .wrap{position:relative;z-index:1;padding-top:8rem;padding-bottom:3rem}
+.vf-carousel {
+    position: relative;
+    margin: 8px 0 54px
+}
 
-#zion .guide-banner{position:relative;min-height:420px;display:flex;align-items:flex-end;background:linear-gradient(90deg,rgba(25,28,24,.78),rgba(25,28,24,.20)),url("images/zion/zion-overview.jpg") center/cover no-repeat;overflow:hidden}
-#zion .guide-banner .wrap{position:relative;z-index:1;padding-top:8rem;padding-bottom:3rem}
+.vf-carousel-track {
+    display: flex;
+    gap: 16px;
+    overflow-x: auto;
+    scroll-snap-type: x mandatory;
+    scroll-behavior: smooth;
+    scrollbar-width: none;
+    padding: 2px 2px 12px
+}
 
-#bryce .guide-banner{position:relative;min-height:420px;display:flex;align-items:flex-end;background:linear-gradient(90deg,rgba(25,28,24,.78),rgba(25,28,24,.20)),url("images/bryce/bryce_overview.webp") center/cover no-repeat;overflow:hidden}
-#bryce .guide-banner .wrap{position:relative;z-index:1;padding-top:8rem;padding-bottom:3rem}
+.vf-carousel-track::-webkit-scrollbar {
+    display: none
+}
 
-#torrey .guide-banner{position:relative;min-height:420px;display:flex;align-items:flex-end;background:linear-gradient(90deg,rgba(25,28,24,.78),rgba(25,28,24,.20)),url("images/torrey/snenic_byway.WebP") center/cover no-repeat;overflow:hidden}
-#torrey .guide-banner .wrap{position:relative;z-index:1;padding-top:8rem;padding-bottom:3rem}
+.vf-slide {
+    flex: 0 0 min(72vw, 620px);
+    height: 390px;
+    margin: 0;
+    position: relative;
+    overflow: hidden;
+    border-radius: 22px;
+    scroll-snap-align: center;
+    background: #ddd;
+    cursor: zoom-in
+}
 
-#moab .guide-banner{position:relative;min-height:420px;display:flex;align-items:flex-end;background:linear-gradient(90deg,rgba(25,28,24,.78),rgba(25,28,24,.20)),url("https://static.wixstatic.com/media/fba4f3_45e24d6d7828456a96c7cb3ec368befd~mv2_d_6000_4000_s_4_2.jpg/v1/fill/w_980%2Ch_653%2Cal_c%2Cq_85%2Cusm_0.66_1.00_0.01%2Cenc_avif%2Cquality_auto/fba4f3_45e24d6d7828456a96c7cb3ec368befd~mv2_d_6000_4000_s_4_2.jpg") center/cover no-repeat;overflow:hidden}
-#moab .guide-banner .wrap{position:relative;z-index:1;padding-top:8rem;padding-bottom:3rem}
+.vf-slide img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+    transition: transform .35s ease
+}
 
-#monument .guide-banner{position:relative;min-height:420px;display:flex;align-items:flex-end;background:linear-gradient(90deg,rgba(25,28,24,.78),rgba(25,28,24,.20)),url("https://static.wixstatic.com/media/0f61de_cc2a1c092730460dbc4f458c8fb166b9~mv2.jpg/v1/fill/w_2048%2Ch_1365%2Cal_c%2Cq_90%2Cenc_avif%2Cquality_auto/0f61de_cc2a1c092730460dbc4f458c8fb166b9~mv2.jpg") center/cover no-repeat;overflow:hidden}
-#monument .guide-banner .wrap{position:relative;z-index:1;padding-top:8rem;padding-bottom:3rem}
+.vf-slide:hover img {
+    transform: scale(1.015)
+}
 
-#page .guide-banner{position:relative;min-height:420px;display:flex;align-items:flex-end;background:linear-gradient(90deg,rgba(25,28,24,.78),rgba(25,28,24,.20)),url("https://upload.wikimedia.org/wikipedia/commons/thumb/9/9d/Horseshoe_Bend_Arizona.jpg/1280px-Horseshoe_Bend_Arizona.jpg") center/cover no-repeat;overflow:hidden}
-#page .guide-banner .wrap{position:relative;z-index:1;padding-top:8rem;padding-bottom:3rem}
+.vf-slide figcaption {
+    position: absolute;
+    left: 16px;
+    bottom: 16px;
+    background: rgba(28, 31, 27, .78);
+    backdrop-filter: blur(8px);
+    color: #fff;
+    padding: 9px 13px;
+    border-radius: 999px;
+    font-size: .8rem
+}
 
-#grand .guide-banner{position:relative;min-height:420px;display:flex;align-items:flex-end;background:linear-gradient(90deg,rgba(25,28,24,.78),rgba(25,28,24,.20)),url("https://commons.wikimedia.org/wiki/Special:Redirect/file/Grand_Canyon_South_Rim_at_Sunset.jpg") center/cover no-repeat;overflow:hidden}
-#grand .guide-banner .wrap{position:relative;z-index:1;padding-top:8rem;padding-bottom:3rem}
+.vf-carousel-btn {
+    position: absolute;
+    z-index: 3;
+    top: calc(50% - 30px);
+    width: 48px;
+    height: 48px;
+    border: 0;
+    border-radius: 50%;
+    background: rgba(255, 255, 255, .92);
+    box-shadow: 0 5px 20px rgba(0, 0, 0, .16);
+    font-size: 2rem;
+    line-height: 1;
+    cursor: pointer
+}
 
-#sedona .guide-banner{position:relative;min-height:420px;display:flex;align-items:flex-end;background:linear-gradient(90deg,rgba(25,28,24,.78),rgba(25,28,24,.20)),url("https://upload.wikimedia.org/wikipedia/commons/thumb/9/9f/Cathedral_Rock_Sedona_Arizona.jpg/1280px-Cathedral_Rock_Sedona_Arizona.jpg") center/cover no-repeat;overflow:hidden}
-#sedona .guide-banner .wrap{position:relative;z-index:1;padding-top:8rem;padding-bottom:3rem}
+.vf-carousel-btn.prev {
+    left: -20px
+}
 
-#route66 .guide-banner{position:relative;min-height:420px;display:flex;align-items:flex-end;background:linear-gradient(90deg,rgba(25,28,24,.78),rgba(25,28,24,.20)),url("https://upload.wikimedia.org/wikipedia/commons/thumb/0/00/Route_66_Seligman_Arizona.jpg/1280px-Route_66_Seligman_Arizona.jpg") center/cover no-repeat;overflow:hidden}
-#route66 .guide-banner .wrap{position:relative;z-index:1;padding-top:8rem;padding-bottom:3rem}
+.vf-carousel-btn.next {
+    right: -20px
+}
 
-#vegas .guide-banner{position:relative;min-height:420px;display:flex;align-items:flex-end;background:linear-gradient(90deg,rgba(25,28,24,.78),rgba(25,28,24,.20)),url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQGTrLzOi26MKGs5Rz1FpajmFGGuJf2HfIQOthE0do759Iye44AxihGUZkB&s=10") center/cover no-repeat;overflow:hidden}
-#vegas .guide-banner .wrap{position:relative;z-index:1;padding-top:8rem;padding-bottom:3rem}
+.vf-carousel-dots {
+    display: flex;
+    justify-content: center;
+    gap: 7px;
+    margin-top: 4px
+}
 
-.photo-intro{display:block;max-width:840px;margin-bottom:28px}.dest-carousel{position:relative;margin:8px 0 54px}.dest-carousel-track{display:flex;gap:16px;overflow-x:auto;scroll-snap-type:x mandatory;scroll-behavior:smooth;scrollbar-width:none;padding:2px 2px 12px}.dest-carousel-track::-webkit-scrollbar{display:none}.dest-slide{flex:0 0 min(72vw,620px);height:390px;margin:0;position:relative;overflow:hidden;border-radius:22px;scroll-snap-align:center;background:#ddd;cursor:zoom-in}.dest-slide img{width:100%;height:100%;object-fit:cover;display:block;transition:transform .35s ease}.dest-slide:hover img{transform:scale(1.015)}.dest-slide figcaption{position:absolute;left:16px;bottom:16px;background:rgba(28,31,27,.78);backdrop-filter:blur(8px);color:#fff;padding:9px 13px;border-radius:999px;font-size:.8rem}.dest-carousel-btn{position:absolute;z-index:3;top:calc(50% - 30px);width:48px;height:48px;border:0;border-radius:50%;background:rgba(255,255,255,.92);box-shadow:0 5px 20px rgba(0,0,0,.16);font-size:2rem;line-height:1;cursor:pointer}.dest-carousel-btn.prev{left:-20px}.dest-carousel-btn.next{right:-20px}.dest-carousel-dots{display:flex;justify-content:center;gap:7px;margin-top:4px}.dest-carousel-dots i{width:7px;height:7px;border-radius:50%;background:#c8b8a7;display:block}.dest-carousel-dots i.active{background:#7e4d3e}@media(max-width:760px){.new-guide .guide-banner{min-height:350px;background-position:center}.new-guide .guide-banner .wrap{padding-top:6rem;padding-bottom:2.5rem}.dest-slide{flex-basis:88vw;height:300px}.dest-carousel-btn{display:none}.dest-carousel{margin-bottom:42px}}
+.vf-carousel-dots i {
+    width: 7px;
+    height: 7px;
+    border-radius: 50%;
+    background: #c8b8a7;
+    display: block
+}
+
+.vf-carousel-dots i.active {
+    background: #7e4d3e
+}
+
+.vf-lightbox {
+    position: fixed;
+    inset: 0;
+    z-index: 999;
+    background: rgba(15, 15, 14, .94);
+    display: none;
+    align-items: center;
+    justify-content: center;
+    padding: 5vw
+}
+
+.vf-lightbox.open {
+    display: flex
+}
+
+.vf-lightbox img {
+    max-width: 94vw;
+    max-height: 88vh;
+    object-fit: contain
+}
+
+.vf-lightbox button {
+    position: absolute;
+    right: 24px;
+    top: 18px;
+    background: none;
+    border: 0;
+    color: white;
+    font-size: 2.5rem;
+    cursor: pointer
+}
+
+@media(max-width:760px) {
+    .vf-slide {
+        flex-basis: 88vw;
+        height: 300px
+    }
+
+    .vf-carousel-btn {
+        display: none
+    }
+
+    .vf-carousel {
+        margin-bottom: 42px
+    }
+}
+
+#arrival .guide-banner {
+    position: relative;
+    min-height: 420px;
+    display: flex;
+    align-items: flex-end;
+    background: linear-gradient(90deg, rgba(25, 28, 24, .78), rgba(25, 28, 24, .20)), url("images/las-vegas/strip.jpg") center/cover no-repeat;
+    overflow: hidden
+}
+
+#arrival .guide-banner .wrap {
+    position: relative;
+    z-index: 1;
+    padding-top: 8rem;
+    padding-bottom: 3rem
+}
+
+#zion .guide-banner {
+    position: relative;
+    min-height: 420px;
+    display: flex;
+    align-items: flex-end;
+    background: linear-gradient(90deg, rgba(25, 28, 24, .78), rgba(25, 28, 24, .20)), url("images/zion/zion-overview.jpg") center/cover no-repeat;
+    overflow: hidden
+}
+
+#zion .guide-banner .wrap {
+    position: relative;
+    z-index: 1;
+    padding-top: 8rem;
+    padding-bottom: 3rem
+}
+
+#bryce .guide-banner {
+    position: relative;
+    min-height: 420px;
+    display: flex;
+    align-items: flex-end;
+    background: linear-gradient(90deg, rgba(25, 28, 24, .78), rgba(25, 28, 24, .20)), url("images/bryce/bryce_overview.webp") center/cover no-repeat;
+    overflow: hidden
+}
+
+#bryce .guide-banner .wrap {
+    position: relative;
+    z-index: 1;
+    padding-top: 8rem;
+    padding-bottom: 3rem
+}
+
+#torrey .guide-banner {
+    position: relative;
+    min-height: 420px;
+    display: flex;
+    align-items: flex-end;
+    background: linear-gradient(90deg, rgba(25, 28, 24, .78), rgba(25, 28, 24, .20)), url("images/torrey/snenic_byway.WebP") center/cover no-repeat;
+    overflow: hidden
+}
+
+#torrey .guide-banner .wrap {
+    position: relative;
+    z-index: 1;
+    padding-top: 8rem;
+    padding-bottom: 3rem
+}
+
+#moab .guide-banner {
+    position: relative;
+    min-height: 420px;
+    display: flex;
+    align-items: flex-end;
+    background: linear-gradient(90deg, rgba(25, 28, 24, .78), rgba(25, 28, 24, .20)), url("https://static.wixstatic.com/media/fba4f3_45e24d6d7828456a96c7cb3ec368befd~mv2_d_6000_4000_s_4_2.jpg/v1/fill/w_980%2Ch_653%2Cal_c%2Cq_85%2Cusm_0.66_1.00_0.01%2Cenc_avif%2Cquality_auto/fba4f3_45e24d6d7828456a96c7cb3ec368befd~mv2_d_6000_4000_s_4_2.jpg") center/cover no-repeat;
+    overflow: hidden
+}
+
+#moab .guide-banner .wrap {
+    position: relative;
+    z-index: 1;
+    padding-top: 8rem;
+    padding-bottom: 3rem
+}
+
+#monument .guide-banner {
+    position: relative;
+    min-height: 420px;
+    display: flex;
+    align-items: flex-end;
+    background: linear-gradient(90deg, rgba(25, 28, 24, .78), rgba(25, 28, 24, .20)), url("https://www.roadtrippin.fr/image/spot/3x2-1500/monument-valley.jpg") center/cover no-repeat;
+    overflow: hidden
+}
+
+#monument .guide-banner .wrap {
+    position: relative;
+    z-index: 1;
+    padding-top: 8rem;
+    padding-bottom: 3rem
+}
+
+#page .guide-banner {
+    position: relative;
+    min-height: 420px;
+    display: flex;
+    align-items: flex-end;
+    background: linear-gradient(90deg, rgba(25, 28, 24, .78), rgba(25, 28, 24, .20)), url("https://upload.wikimedia.org/wikipedia/commons/thumb/9/9d/Horseshoe_Bend_Arizona.jpg/1280px-Horseshoe_Bend_Arizona.jpg") center/cover no-repeat;
+    overflow: hidden
+}
+
+#page .guide-banner .wrap {
+    position: relative;
+    z-index: 1;
+    padding-top: 8rem;
+    padding-bottom: 3rem
+}
+
+#grand .guide-banner {
+    position: relative;
+    min-height: 420px;
+    display: flex;
+    align-items: flex-end;
+    background: linear-gradient(90deg, rgba(25, 28, 24, .78), rgba(25, 28, 24, .20)), url("https://commons.wikimedia.org/wiki/Special:Redirect/file/Grand_Canyon_South_Rim_at_Sunset.jpg") center/cover no-repeat;
+    overflow: hidden
+}
+
+#grand .guide-banner .wrap {
+    position: relative;
+    z-index: 1;
+    padding-top: 8rem;
+    padding-bottom: 3rem
+}
+
+#sedona .guide-banner {
+    position: relative;
+    min-height: 420px;
+    display: flex;
+    align-items: flex-end;
+    background: linear-gradient(90deg, rgba(25, 28, 24, .78), rgba(25, 28, 24, .20)), url("https://upload.wikimedia.org/wikipedia/commons/thumb/9/9f/Cathedral_Rock_Sedona_Arizona.jpg/1280px-Cathedral_Rock_Sedona_Arizona.jpg") center/cover no-repeat;
+    overflow: hidden
+}
+
+#sedona .guide-banner .wrap {
+    position: relative;
+    z-index: 1;
+    padding-top: 8rem;
+    padding-bottom: 3rem
+}
+
+#route66 .guide-banner {
+    position: relative;
+    min-height: 420px;
+    display: flex;
+    align-items: flex-end;
+    background: linear-gradient(90deg, rgba(25, 28, 24, .78), rgba(25, 28, 24, .20)), url("https://upload.wikimedia.org/wikipedia/commons/thumb/0/00/Route_66_Seligman_Arizona.jpg/1280px-Route_66_Seligman_Arizona.jpg") center/cover no-repeat;
+    overflow: hidden
+}
+
+#route66 .guide-banner .wrap {
+    position: relative;
+    z-index: 1;
+    padding-top: 8rem;
+    padding-bottom: 3rem
+}
+
+#vegas .guide-banner {
+    position: relative;
+    min-height: 420px;
+    display: flex;
+    align-items: flex-end;
+    background: linear-gradient(90deg, rgba(25, 28, 24, .78), rgba(25, 28, 24, .20)), url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQGTrLzOi26MKGs5Rz1FpajmFGGuJf2HfIQOthE0do759Iye44AxihGUZkB&s=10") center/cover no-repeat;
+    overflow: hidden
+}
+
+#vegas .guide-banner .wrap {
+    position: relative;
+    z-index: 1;
+    padding-top: 8rem;
+    padding-bottom: 3rem
+}
+
+.photo-intro {
+    display: block;
+    max-width: 840px;
+    margin-bottom: 28px
+}
+
+.dest-carousel {
+    position: relative;
+    margin: 8px 0 54px
+}
+
+.dest-carousel-track {
+    display: flex;
+    gap: 16px;
+    overflow-x: auto;
+    scroll-snap-type: x mandatory;
+    scroll-behavior: smooth;
+    scrollbar-width: none;
+    padding: 2px 2px 12px
+}
+
+.dest-carousel-track::-webkit-scrollbar {
+    display: none
+}
+
+.dest-slide {
+    flex: 0 0 min(72vw, 620px);
+    height: 390px;
+    margin: 0;
+    position: relative;
+    overflow: hidden;
+    border-radius: 22px;
+    scroll-snap-align: center;
+    background: #ddd;
+    cursor: zoom-in
+}
+
+.dest-slide img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+    transition: transform .35s ease
+}
+
+.dest-slide:hover img {
+    transform: scale(1.015)
+}
+
+.dest-slide figcaption {
+    position: absolute;
+    left: 16px;
+    bottom: 16px;
+    background: rgba(28, 31, 27, .78);
+    backdrop-filter: blur(8px);
+    color: #fff;
+    padding: 9px 13px;
+    border-radius: 999px;
+    font-size: .8rem
+}
+
+.dest-carousel-btn {
+    position: absolute;
+    z-index: 3;
+    top: calc(50% - 30px);
+    width: 48px;
+    height: 48px;
+    border: 0;
+    border-radius: 50%;
+    background: rgba(255, 255, 255, .92);
+    box-shadow: 0 5px 20px rgba(0, 0, 0, .16);
+    font-size: 2rem;
+    line-height: 1;
+    cursor: pointer
+}
+
+.dest-carousel-btn.prev {
+    left: -20px
+}
+
+.dest-carousel-btn.next {
+    right: -20px
+}
+
+.dest-carousel-dots {
+    display: flex;
+    justify-content: center;
+    gap: 7px;
+    margin-top: 4px
+}
+
+.dest-carousel-dots i {
+    width: 7px;
+    height: 7px;
+    border-radius: 50%;
+    background: #c8b8a7;
+    display: block
+}
+
+.dest-carousel-dots i.active {
+    background: #7e4d3e
+}
+
+@media(max-width:760px) {
+    .new-guide .guide-banner {
+        min-height: 350px;
+        background-position: center
+    }
+
+    .new-guide .guide-banner .wrap {
+        padding-top: 6rem;
+        padding-bottom: 2.5rem
+    }
+
+    .dest-slide {
+        flex-basis: 88vw;
+        height: 300px
+    }
+
+    .dest-carousel-btn {
+        display: none
+    }
+
+    .dest-carousel {
+        margin-bottom: 42px
+    }
+}
