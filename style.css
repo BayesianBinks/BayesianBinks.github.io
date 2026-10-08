@@ -1538,7 +1538,7 @@ footer {
     min-height: 420px;
     display: flex;
     align-items: flex-end;
-    background: linear-gradient(90deg, rgba(25, 28, 24, .78), rgba(25, 28, 24, .20)), url("https://commons.wikimedia.org/wiki/Special:Redirect/file/Grand_Canyon_South_Rim_at_Sunset.jpg") center/cover no-repeat;
+    background: linear-gradient(90deg, rgba(25, 28, 24, .78), rgba(25, 28, 24, .20)), url("images/grand-canyon/banner.jpg") center/cover no-repeat;
     overflow: hidden
 }
 
