@@ -1549,16 +1549,16 @@ footer {
     padding-bottom: 3rem
 }
 
-#sedona .guide-banner {
+#williams .guide-banner {
     position: relative;
     min-height: 420px;
     display: flex;
     align-items: flex-end;
-    background: linear-gradient(90deg, rgba(25, 28, 24, .78), rgba(25, 28, 24, .20)), url("https://upload.wikimedia.org/wikipedia/commons/thumb/9/9f/Cathedral_Rock_Sedona_Arizona.jpg/1280px-Cathedral_Rock_Sedona_Arizona.jpg") center/cover no-repeat;
+    background: linear-gradient(90deg, rgba(25, 28, 24, .78), rgba(25, 28, 24, .20)), url("images/williams/banner.webp") center/cover no-repeat;
     overflow: hidden
 }
 
-#sedona .guide-banner .wrap {
+#williams .guide-banner .wrap {
     position: relative;
     z-index: 1;
     padding-top: 8rem;
